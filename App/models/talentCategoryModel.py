@@ -1,6 +1,6 @@
 from django.db import models
-from artist_app.models.baseModel import BaseModel
-from artist_app.models.uploadMediaModel import UploadMediaModel
+from App.models.baseModel import BaseModel
+from App.models.uploadMediaModel import UploadMediaModel
 
 class TalentCategoryModel(BaseModel):
     image = models.ForeignKey(UploadMediaModel, on_delete=models.SET_NULL, blank=True, null=True)

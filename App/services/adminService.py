@@ -2,37 +2,37 @@ from email import message
 from shutil import ExecError
 from tabnanny import check
 from unicodedata import category
-from artist_app.models.permissionModel import PermissionModel
-from artist_app.utils import messages
-from artist_app.models.talentCategoryModel import TalentCategoryModel
-from artist_app.models.talentSubCategoryModel import TalentSubCategoryModel
-from artist_app.serializers import adminSerializer
-from artist_app.models.faqModel import FAQModel
-from artist_app.models import TermAndConditionModel
+from App.models.permissionModel import PermissionModel
+from App.utils import messages
+from App.models.talentCategoryModel import TalentCategoryModel
+from App.models.talentSubCategoryModel import TalentSubCategoryModel
+from App.serializers import adminSerializer
+from App.models.faqModel import FAQModel
+from App.models import TermAndConditionModel
 from django.contrib.auth.hashers import check_password, make_password
-from artist_app.serializers.adminSerializer import TermAndConditionsSerializer
-from artist_app.models import UserModel
+from App.serializers.adminSerializer import TermAndConditionsSerializer
+from App.models import UserModel
 from rest_framework_simplejwt.tokens import RefreshToken
-from artist_app.utils.sendOtp import send_otp_via_mail,make_otp,generate_password,\
+from App.utils.sendOtp import send_otp_via_mail,make_otp,generate_password,\
                                      send_password_via_mail, generate_encoded_id,\
                                          send_notification_to_mail
-from artist_app.models import ManageAddressModel
-from artist_app.models.talentDetailsModel import TalentDetailsModel
-from artist_app.models.bookingTalentModel import BookingTalentModel
-from artist_app.utils.customPagination import CustomPagination
+from App.models import ManageAddressModel
+from App.models.talentDetailsModel import TalentDetailsModel
+from App.models.bookingTalentModel import BookingTalentModel
+from App.utils.customPagination import CustomPagination
 from threading import Thread
 from django.utils import timezone
-from artist_app.models import userModel, NotificationModel
+from App.models import userModel, NotificationModel
 from pyfcm import FCMNotification
-from artist_app.models.contactUsModel import ContactUsModel
+from App.models.contactUsModel import ContactUsModel
 from django.db.models import Sum, Value
 from django.db.models.functions import Coalesce
-from artist_app.serializers.Clientserializer import ShowBookingDetailsSerializer
-from artist_app.models.ratingsModel import ReviewAndRatingsModel 
+from App.serializers.Clientserializer import ShowBookingDetailsSerializer
+from App.models.ratingsModel import ReviewAndRatingsModel 
 from django.http import HttpResponse
 import csv
 import calendar
-from artist_app.models.colourPreferencesModel import ColourPreferencesModel
+from App.models.colourPreferencesModel import ColourPreferencesModel
 
 class AdminService:
     def add_category(self, request):

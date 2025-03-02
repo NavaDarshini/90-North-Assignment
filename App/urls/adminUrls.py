@@ -1,5 +1,5 @@
 from django.urls import path
-from artist_app.views import adminView, talentView
+from App.views import adminView, talentView
 
 urlpatterns = [
     #  admin onboarding urls

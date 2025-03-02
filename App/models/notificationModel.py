@@ -1,5 +1,5 @@
 from django.db import models
-from artist_app.models.userModel import UserModel
+from App.models.userModel import UserModel
 
 NOTIFICATION_TYPE = [(1, "email"), (2, "push notification")]
 NOTIFICATION_FOR = [(1, "all"), (2, "customer"), (3, "artist")]

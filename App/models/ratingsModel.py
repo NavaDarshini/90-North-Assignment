@@ -1,7 +1,7 @@
 from django.db import models
-from artist_app.models.baseModel import BaseModel
-from artist_app.models.userModel import UserModel
-from artist_app.models.bookingTalentModel import BookingTalentModel
+from App.models.baseModel import BaseModel
+from App.models.userModel import UserModel
+from App.models.bookingTalentModel import BookingTalentModel
 from django.contrib.postgres.fields import ArrayField
 
 BEST_LIKED_CHOICES = [

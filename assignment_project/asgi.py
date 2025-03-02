@@ -13,7 +13,7 @@ from django.core.asgi import get_asgi_application
 from channels.auth import AuthMiddlewareStack
 import artist_app.routing
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'artist_project.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'assignment_project.settings')
 django_asgi_app = get_asgi_application()
 
 application = ProtocolTypeRouter({
@@ -21,7 +21,7 @@ application = ProtocolTypeRouter({
     "websocket": AuthMiddlewareStack
         (
             URLRouter(                
-                artist_app.routing.websocket_urlpatterns
+                App.routing.websocket_urlpatterns
             )
         )
 })

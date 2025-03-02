@@ -1,6 +1,6 @@
 from django.db import models
-from artist_app.models import userModel, baseModel
-from artist_app.utils.choiceFields import ADDRESS_CHOICE
+from App.models import userModel, baseModel
+from App.utils.choiceFields import ADDRESS_CHOICE
 
 class ManageAddressModel(baseModel.BaseModel):
     user = models.ForeignKey(userModel.UserModel, on_delete=models.CASCADE)

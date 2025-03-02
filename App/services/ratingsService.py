@@ -1,9 +1,9 @@
-from artist_app.models.ratingsModel import ReviewAndRatingsModel
-from artist_app.serializers.ratingsSerializer import AddRatingSerializer, GetRatingSerializer
-from artist_app.models.bookingTalentModel import BookingTalentModel
-from artist_app.utils import messages
-from artist_app.models.userModel import UserModel
-from artist_app.models.ratingsModel import ReviewAndRatingsModel
+from App.models.ratingsModel import ReviewAndRatingsModel
+from App.serializers.ratingsSerializer import AddRatingSerializer, GetRatingSerializer
+from App.models.bookingTalentModel import BookingTalentModel
+from App.utils import messages
+from App.models.userModel import UserModel
+from App.models.ratingsModel import ReviewAndRatingsModel
 from django.db.models import Avg
 from datetime import datetime, timedelta
 

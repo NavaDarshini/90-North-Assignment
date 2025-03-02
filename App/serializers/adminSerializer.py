@@ -1,21 +1,21 @@
-from artist_app.models.permissionModel import PermissionModel
+from App.models.permissionModel import PermissionModel
 from rest_framework import serializers
-from artist_app.models.talentCategoryModel import TalentCategoryModel
-from artist_app.models.talentSubCategoryModel import TalentSubCategoryModel
-from artist_app.models.faqModel import FAQModel
-from artist_app.models import TermAndConditionModel
-from artist_app.models import UserModel
-from artist_app.models.manageAddressModel import ManageAddressModel
-from artist_app.serializers.uploadMediaSerializer import CreateUpdateUploadMediaSerializer
-from artist_app.models.talentDetailsModel import TalentDetailsModel
-from artist_app.models.uploadMediaModel import UploadMediaModel
-from artist_app.models.bookingTalentModel import BookingTalentModel
-# from artist_python_backend.artist_app.models import manageAddressModel
-from artist_app.serializers.Clientserializer import TalentBasicDetails
-from artist_app.models.contactUsModel import ContactUsModel
-from artist_app.models.notificationModel import NotificationModel
-from artist_app.models.ratingsModel import ReviewAndRatingsModel
-from artist_app.utils.choiceFields import MODULE_PATHS
+from App.models.talentCategoryModel import TalentCategoryModel
+from App.models.talentSubCategoryModel import TalentSubCategoryModel
+from App.models.faqModel import FAQModel
+from App.models import TermAndConditionModel
+from App.models import UserModel
+from App.models.manageAddressModel import ManageAddressModel
+from App.serializers.uploadMediaSerializer import CreateUpdateUploadMediaSerializer
+from App.models.talentDetailsModel import TalentDetailsModel
+from App.models.uploadMediaModel import UploadMediaModel
+from App.models.bookingTalentModel import BookingTalentModel
+# from artist_python_backend.App.models import manageAddressModel
+from App.serializers.Clientserializer import TalentBasicDetails
+from App.models.contactUsModel import ContactUsModel
+from App.models.notificationModel import NotificationModel
+from App.models.ratingsModel import ReviewAndRatingsModel
+from App.utils.choiceFields import MODULE_PATHS
 import uuid
 
 class CategorySerializer(serializers.ModelSerializer):

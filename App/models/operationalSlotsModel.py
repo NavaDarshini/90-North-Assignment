@@ -1,6 +1,6 @@
 from django.db import models
-from artist_app.models.baseModel import BaseModel
-from artist_app.models.userModel import UserModel
+from App.models.baseModel import BaseModel
+from App.models.userModel import UserModel
 
 class OperationalSlotsModel(BaseModel):
     user = models.ForeignKey(UserModel, on_delete=models.CASCADE)

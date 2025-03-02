@@ -1,6 +1,6 @@
 from http import client
 from django.urls import path
-from artist_app.views import talentView, clientView, adminView
+from App.views import talentView, clientView, adminView
 
 urlpatterns = [
     path("registration", talentView.TalentSignUpView.as_view()),

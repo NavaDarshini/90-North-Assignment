@@ -1,6 +1,6 @@
 from django.db import models
-from artist_app.models.baseModel import BaseModel
-from artist_app.models import ChatSessionModel, UserModel
+from App.models.baseModel import BaseModel
+from App.models import ChatSessionModel, UserModel
 
 class ChatStorageModel(BaseModel):
     session = models.ForeignKey(ChatSessionModel, on_delete=models.CASCADE)

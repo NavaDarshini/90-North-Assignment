@@ -4,7 +4,7 @@ import base64
 from django.utils import timezone
 from django.core.mail import EmailMultiAlternatives
 from django.template.loader import render_to_string
-from  artist_project.settings import *
+from  assignment_project.settings import *
 from rest_framework_simplejwt.tokens import RefreshToken
 import threading
 from threading import Thread

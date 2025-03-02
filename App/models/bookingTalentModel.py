@@ -1,8 +1,8 @@
 from django.db import models
-from artist_app.models.baseModel import BaseModel
-from artist_app.models import TalentDetailsModel,ManageAddressModel, UserModel
+from App.models.baseModel import BaseModel
+from App.models import TalentDetailsModel,ManageAddressModel, UserModel
 # from artist_app.models.
-from artist_app.utils.choiceFields import BOOKING_STATUS, TRACK_BOOKING, BOOKING_METHOD_CHOICES
+from App.utils.choiceFields import BOOKING_STATUS, TRACK_BOOKING, BOOKING_METHOD_CHOICES
 
 class BookingTalentModel(BaseModel):
     booking_id = models.IntegerField(blank=True, null=True)

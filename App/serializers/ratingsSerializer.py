@@ -1,6 +1,6 @@
 from rest_framework import serializers
-from artist_app.models.ratingsModel import ReviewAndRatingsModel
-from artist_app.serializers.chatSerializer import UserDetailsSerializer
+from App.models.ratingsModel import ReviewAndRatingsModel
+from App.serializers.chatSerializer import UserDetailsSerializer
 from django.db.models import Avg
 
 class AddRatingSerializer(serializers.ModelSerializer):

@@ -1,5 +1,5 @@
 from django.db import models
-from artist_app.models.baseModel import BaseModel
+from App.models.baseModel import BaseModel
 from django.utils import timezone
 
 class ContactUsModel(BaseModel):

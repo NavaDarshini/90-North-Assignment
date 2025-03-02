@@ -1,5 +1,5 @@
 from django.urls import path
-from artist_app.views import uploadMediaView, adminView, chatView, ratingsView, talentView
+from App.views import uploadMediaView, adminView, chatView, ratingsView, talentView
 
 urlpatterns = [
     path("media", uploadMediaView.UploadMediaView.as_view()),

@@ -1,5 +1,5 @@
-from artist_app.models import ChatSessionModel, ChatStorageModel
-from artist_app.serializers.chatSerializer import UserChatsSerializer, ChatSerializer
+from App.models import ChatSessionModel, ChatStorageModel
+from App.serializers.chatSerializer import UserChatsSerializer, ChatSerializer
 from django.db.models import Q
 
 class ChatService():

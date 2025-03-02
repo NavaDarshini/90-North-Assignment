@@ -1,11 +1,11 @@
 from email.policy import default
 from django.db import models
-from artist_app.models.baseModel import BaseModel
-from artist_app.models.userModel import UserModel
-from artist_app.models.uploadMediaModel import UploadMediaModel
+from App.models.baseModel import BaseModel
+from App.models.userModel import UserModel
+from App.models.uploadMediaModel import UploadMediaModel
 from django.contrib.postgres.fields import ArrayField
-from artist_app.utils.choiceFields import HAIR_COLOR_CHOICES, EYE_COLOR_CHOICES, BOOKING_METHOD_CHOICES
-from artist_app.models.colourPreferencesModel import ColourPreferencesModel
+from App.utils.choiceFields import HAIR_COLOR_CHOICES, EYE_COLOR_CHOICES, BOOKING_METHOD_CHOICES
+from App.models.colourPreferencesModel import ColourPreferencesModel
 
 class TalentDetailsModel(BaseModel):    
     #foreign keys

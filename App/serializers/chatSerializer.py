@@ -1,6 +1,6 @@
 from rest_framework import serializers
-from artist_app.models import ChatSessionModel, UserModel, ChatStorageModel
-from artist_app.serializers.uploadMediaSerializer import CreateUpdateUploadMediaSerializer 
+from App.models import ChatSessionModel, UserModel, ChatStorageModel
+from App.serializers.uploadMediaSerializer import CreateUpdateUploadMediaSerializer 
 
 class UserDetailsSerializer(serializers.ModelSerializer):
     profile_picture = CreateUpdateUploadMediaSerializer()

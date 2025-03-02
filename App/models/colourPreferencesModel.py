@@ -1,6 +1,6 @@
-from artist_app.models.baseModel import BaseModel
+from App.models.baseModel import BaseModel
 from django.db import models
-from artist_app.utils.choiceFields import PREFERENCE_TYPES
+from App.utils.choiceFields import PREFERENCE_TYPES
 
 class ColourPreferencesModel(BaseModel):
     name = models.CharField(max_length=100)

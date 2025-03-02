@@ -3,16 +3,16 @@ from sys import api_version
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import AllowAny
-from artist_app.services.adminService import AdminService
+from App.services.adminService import AdminService
 import csv
 import pandas as pd
 from django.http import JsonResponse
 from io import BytesIO
 from django.core.files.uploadedfile import InMemoryUploadedFile
-from artist_app.services.uploadMediaService import UploadMediaService
-from artist_app.models.userModel import UserModel
-from artist_app.serializers.adminSerializer import *
-# from artist_python_backend.artist_app.models import talentDetailsModel
+from App.services.uploadMediaService import UploadMediaService
+from App.models.userModel import UserModel
+from App.serializers.adminSerializer import *
+# from artist_python_backend.App.models import talentDetailsModel
 
 
 admin_obj = AdminService()

@@ -1,7 +1,7 @@
 from difflib import restore
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from artist_app.services.clientService import ClientService
+from App.services.clientService import ClientService
 from rest_framework.permissions import AllowAny,IsAuthenticated
 
 userservice = ClientService()

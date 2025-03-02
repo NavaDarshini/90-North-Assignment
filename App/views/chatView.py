@@ -1,4 +1,4 @@
-from artist_app.services.chatService import ChatService
+from App.services.chatService import ChatService
 from rest_framework.views import APIView
 from rest_framework.response import Response
 

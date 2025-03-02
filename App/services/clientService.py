@@ -1,34 +1,34 @@
-from artist_app.serializers.Clientserializer import CreateClientSerializers,AddAddressDetailsSerializer,SubCategories,\
+from App.serializers.Clientserializer import CreateClientSerializers,AddAddressDetailsSerializer,SubCategories,\
     TalentBasedOnSubcategories,TalentDetailsBasedOnSubcategories,BookingDetailsSerializer,ShowBookingDetailsSerializer,\
     GetUserSerializer, TalentBasicDetails, TalentListingDetailsSerializer,TalentDetailsBasedOnIOSSubcategories,GetClientDetails
 from django.contrib.auth.hashers import check_password
-from artist_app.utils.sendOtp import send_otp_via_mail
+from App.utils.sendOtp import send_otp_via_mail
 from rest_framework import status
-from artist_app.models.userModel import UserModel
+from App.models.userModel import UserModel
 from rest_framework_simplejwt.tokens import RefreshToken
-from artist_app.models.manageAddressModel import ManageAddressModel
-from artist_app.utils import messages
-from artist_app.models.talentCategoryModel import TalentCategoryModel
-from artist_app.serializers.talentSerializer import TalentListingSerializer
-from artist_app.models.talentDetailsModel import TalentDetailsModel
-from artist_app.models.talentSubCategoryModel import TalentSubCategoryModel
-from artist_app.models import TalentDetailsModel,BookingTalentModel
+from App.models.manageAddressModel import ManageAddressModel
+from App.utils import messages
+from App.models.talentCategoryModel import TalentCategoryModel
+from App.serializers.talentSerializer import TalentListingSerializer
+from App.models.talentDetailsModel import TalentDetailsModel
+from App.models.talentSubCategoryModel import TalentSubCategoryModel
+from App.models import TalentDetailsModel,BookingTalentModel
 from django.db.models import Q, Max
 from threading import Thread
 from datetime import datetime, date
 import pytz
-from artist_app.utils.sendOtp import make_otp, send_otp_via_mail, generate_encoded_id,generate_access_token
-from artist_app.models.operationalSlotsModel import OperationalSlotsModel
-from artist_app.serializers import adminSerializer, talentSerializer
-from artist_app.models.uploadMediaModel import UploadMediaModel
-from artist_app.serializers.uploadMediaSerializer import CreateUpdateUploadMediaSerializer
-from artist_app.utils.choiceFields import FILTER_KEYS
-from artist_app.serializers.Clientserializer import TalentBasicDetailsIOS
-from artist_app.services.talentService import TalentService
+from App.utils.sendOtp import make_otp, send_otp_via_mail, generate_encoded_id,generate_access_token
+from App.models.operationalSlotsModel import OperationalSlotsModel
+from App.serializers import adminSerializer, talentSerializer
+from App.models.uploadMediaModel import UploadMediaModel
+from App.serializers.uploadMediaSerializer import CreateUpdateUploadMediaSerializer
+from App.utils.choiceFields import FILTER_KEYS
+from App.serializers.Clientserializer import TalentBasicDetailsIOS
+from App.services.talentService import TalentService
 from dateutil.relativedelta import relativedelta
 from django.db.models import When, Value, Case, IntegerField
-from artist_app.models.appNotificationModel import AppNotificationModel
-from artist_app.utils.extraFunctions import add_notification_func
+from App.models.appNotificationModel import AppNotificationModel
+from App.utils.extraFunctions import add_notification_func
 
 talent_obj = TalentService()
 

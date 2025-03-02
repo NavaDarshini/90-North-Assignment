@@ -147,15 +147,6 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
 }
 
-AUTH_USER_MODEL = config("AUTH_USER_MODEL")
-
-MAIL_BACKEND = config("MAIL_BACKEND")
-DEFAULT_FROM_EMAIL = config("DEFAULT_FROM_EMAIL")
-EMAIL_HOST = config("EMAIL_HOST")
-EMAIL_HOST_USER = config("EMAIL_HOST_USER")
-EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD")
-EMAIL_PORT = config("EMAIL_PORT")
-EMAIL_USE_TLS = config("EMAIL_USE_TLS")
 
 DEFAULTS = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),
@@ -187,6 +178,8 @@ SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(days=1),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=10)
 }
+AUTH_USER_MODEL = 'App.UserModel'
+
 
 AWS_ACCESS_KEY_ID = config("AWS_ACCESS_KEY_ID")
 AWS_SECRET_KEY = config("AWS_SECRET_KEY")

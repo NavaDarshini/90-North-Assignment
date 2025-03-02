@@ -1,7 +1,7 @@
-from artist_app.models.uploadMediaModel import UploadMediaModel
-from artist_app.utils.saveImage import save_image
-from artist_app.serializers.uploadMediaSerializer import CreateUpdateUploadMediaSerializer
-from artist_app.utils import messages
+from App.models.uploadMediaModel import UploadMediaModel
+from App.utils.saveImage import save_image
+from App.serializers.uploadMediaSerializer import CreateUpdateUploadMediaSerializer
+from App.utils import messages
 import mimetypes
 
 class UploadMediaService:

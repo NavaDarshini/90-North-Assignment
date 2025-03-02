@@ -1,5 +1,5 @@
 from django.urls import path
-from artist_app.views import clientView, adminView, talentView
+from App.views import clientView, adminView, talentView
 
 urlpatterns = [
     path("signup", clientView.SignUpView.as_view()),

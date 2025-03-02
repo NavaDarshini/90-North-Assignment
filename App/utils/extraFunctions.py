@@ -1,4 +1,4 @@
-from artist_app.models.appNotificationModel import AppNotificationModel
+from App.models.appNotificationModel import AppNotificationModel
 
 def add_notification_func(user, notification_type, title, booking_id):
         AppNotificationModel.objects.create(

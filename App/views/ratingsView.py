@@ -1,7 +1,7 @@
 from os import stat
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from artist_app.services.ratingsService import RatingService
+from App.services.ratingsService import RatingService
 
 ratings_obj = RatingService()
 

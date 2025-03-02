@@ -4,11 +4,11 @@
 # from channels.db import database_sync_to_async
 # from asgiref.sync import sync_to_async, async_to_sync
 # from channels.generic.websocket import AsyncWebsocketConsumer
-# from artist_app.models.chatSessionModel import ChatSessionModel
-# from artist_app.models.chatStorageModel import ChatStorageModel
-# from artist_app.models.userModel import UserModel
+# from App.models.chatSessionModel import ChatSessionModel
+# from App.models.chatStorageModel import ChatStorageModel
+# from App.models.userModel import UserModel
 # from django.db.models import Q
-# from artist_app.utils.sendOtp import generate_encoded_id
+# from App.utils.sendOtp import generate_encoded_id
 # import string
 # import random
 
@@ -69,10 +69,10 @@ import json
 from datetime import datetime
 from channels.db import database_sync_to_async
 from channels.generic.websocket import AsyncWebsocketConsumer
-from artist_app.models.chatSessionModel import ChatSessionModel
-from artist_app.models.chatStorageModel import ChatStorageModel
-from artist_app.models.userModel import UserModel
-from artist_app.serializers.chatSerializer import UserDetailsSerializer  # Import the user serializer
+from App.models.chatSessionModel import ChatSessionModel
+from App.models.chatStorageModel import ChatStorageModel
+from App.models.userModel import UserModel
+from App.serializers.chatSerializer import UserDetailsSerializer  # Import the user serializer
 from django.db.models import Q
 import string
 import random

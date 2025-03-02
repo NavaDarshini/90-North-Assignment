@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from artist_app.models.uploadMediaModel import UploadMediaModel
+from App.models.uploadMediaModel import UploadMediaModel
 
 class CreateUpdateUploadMediaSerializer(serializers.ModelSerializer):
     class Meta:

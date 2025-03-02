@@ -1,6 +1,6 @@
 import boto3
 import random
-from artist_project.settings import AWS_ACCESS_KEY_ID, AWS_SECRET_KEY, AWS_BUCKET_NAME
+from assignment_project.settings import AWS_ACCESS_KEY_ID, AWS_SECRET_KEY, AWS_BUCKET_NAME
 
 access_key_id = AWS_ACCESS_KEY_ID
 secret_access_key = AWS_SECRET_KEY

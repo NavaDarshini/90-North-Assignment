@@ -2,7 +2,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import AllowAny
 
-from artist_app.services.talentService import TalentService
+from App.services.talentService import TalentService
 
 talent_service = TalentService()
 

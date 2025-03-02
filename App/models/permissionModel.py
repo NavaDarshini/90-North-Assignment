@@ -1,6 +1,6 @@
 from django.db import models
-from artist_app.models import UserModel
-from artist_app.utils.choiceFields import MODULE_CHOICES
+from App.models import UserModel
+from App.utils.choiceFields import MODULE_CHOICES
 
 class PermissionModel(models.Model):
     module = models.IntegerField(choices=MODULE_CHOICES)

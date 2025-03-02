@@ -1,20 +1,20 @@
 from datetime import datetime, timedelta
 from rest_framework import serializers
-from artist_app.models.userModel import UserModel
-from artist_app.models.manageAddressModel import ManageAddressModel
-from artist_app.models.talentSubCategoryModel import TalentSubCategoryModel
-from artist_app.models.talentCategoryModel import TalentCategoryModel
-from artist_app.models.talentDetailsModel import TalentDetailsModel
-from artist_app.serializers.uploadMediaSerializer import CreateUpdateUploadMediaSerializer
-from artist_app.models.uploadMediaModel import UploadMediaModel
-from artist_app.models.bookingTalentModel import BookingTalentModel
-from artist_app.utils.sendOtp import generate_access_token
-from artist_app.models.ratingsModel import ReviewAndRatingsModel
+from App.models.userModel import UserModel
+from App.models.manageAddressModel import ManageAddressModel
+from App.models.talentSubCategoryModel import TalentSubCategoryModel
+from App.models.talentCategoryModel import TalentCategoryModel
+from App.models.talentDetailsModel import TalentDetailsModel
+from App.serializers.uploadMediaSerializer import CreateUpdateUploadMediaSerializer
+from App.models.uploadMediaModel import UploadMediaModel
+from App.models.bookingTalentModel import BookingTalentModel
+from App.utils.sendOtp import generate_access_token
+from App.models.ratingsModel import ReviewAndRatingsModel
 from django.db.models import Avg
 from datetime import date
-from artist_app.models.contactUsModel import ContactUsModel
-from artist_app.models.appNotificationModel import AppNotificationModel
-from artist_app.serializers.ratingsSerializer import GetRatingSerializer
+from App.models.contactUsModel import ContactUsModel
+from App.models.appNotificationModel import AppNotificationModel
+from App.serializers.ratingsSerializer import GetRatingSerializer
 
 class CreateClientSerializers(serializers.ModelSerializer):
     token = serializers.SerializerMethodField()

@@ -2,26 +2,26 @@
 from curses import start_color
 import pytz
 from threading import Thread
-from artist_app.utils import messages
-from artist_app.serializers import talentSerializer, adminSerializer, Clientserializer
-from artist_app.models.userModel import UserModel
-from artist_app.models.uploadMediaModel import UploadMediaModel
-from artist_app.models.talentDetailsModel import TalentDetailsModel
-from artist_app.models.talentSubCategoryModel import TalentSubCategoryModel
-from artist_app.utils.sendOtp import make_otp, send_otp_via_mail, generate_encoded_id
+from App.utils import messages
+from App.serializers import talentSerializer, adminSerializer, Clientserializer
+from App.models.userModel import UserModel
+from App.models.uploadMediaModel import UploadMediaModel
+from App.models.talentDetailsModel import TalentDetailsModel
+from App.models.talentSubCategoryModel import TalentSubCategoryModel
+from App.utils.sendOtp import make_otp, send_otp_via_mail, generate_encoded_id
 from datetime import datetime, timedelta, date
 from django.contrib.auth.hashers import make_password, check_password
 from django.db.models import Q
-from artist_app.models.bookingTalentModel import BookingTalentModel
+from App.models.bookingTalentModel import BookingTalentModel
 from datetime import datetime, date
-from artist_app.models.talentCategoryModel import TalentCategoryModel
-from artist_app.models.operationalSlotsModel import OperationalSlotsModel
-from artist_app.serializers.uploadMediaSerializer import CreateUpdateUploadMediaSerializer
+from App.models.talentCategoryModel import TalentCategoryModel
+from App.models.operationalSlotsModel import OperationalSlotsModel
+from App.serializers.uploadMediaSerializer import CreateUpdateUploadMediaSerializer
 from django.db import IntegrityError
-from artist_app.serializers.Clientserializer import ShowBookingDetailsSerializer, NotificationsSerializer
-from artist_app.models.appNotificationModel import AppNotificationModel
-from artist_app.utils.extraFunctions import add_notification_func
-from artist_app.utils.choiceFields import DEFAULT_SLOTS
+from App.serializers.Clientserializer import ShowBookingDetailsSerializer, NotificationsSerializer
+from App.models.appNotificationModel import AppNotificationModel
+from App.utils.extraFunctions import add_notification_func
+from App.utils.choiceFields import DEFAULT_SLOTS
 
 class TalentService:    
     def user_signup(self, request):

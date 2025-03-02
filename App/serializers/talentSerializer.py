@@ -1,14 +1,14 @@
 from rest_framework import serializers
-from artist_app.utils.sendOtp import generate_access_token
-from artist_app.models.operationalSlotsModel import OperationalSlotsModel
-from artist_app.models.userModel import UserModel
-from artist_app.models.talentDetailsModel import TalentDetailsModel
-from artist_app.models.talentCategoryModel import TalentCategoryModel
-from artist_app.models.talentSubCategoryModel import TalentSubCategoryModel
-from artist_app.models.bookingTalentModel import BookingTalentModel
-from artist_app.serializers.uploadMediaSerializer import CreateUpdateUploadMediaSerializer
-from artist_app.serializers.adminSerializer import CategorySerializer, SubCategorySerializer
-from artist_app.models.contactUsModel import ContactUsModel
+from App.utils.sendOtp import generate_access_token
+from App.models.operationalSlotsModel import OperationalSlotsModel
+from App.models.userModel import UserModel
+from App.models.talentDetailsModel import TalentDetailsModel
+from App.models.talentCategoryModel import TalentCategoryModel
+from App.models.talentSubCategoryModel import TalentSubCategoryModel
+from App.models.bookingTalentModel import BookingTalentModel
+from App.serializers.uploadMediaSerializer import CreateUpdateUploadMediaSerializer
+from App.serializers.adminSerializer import CategorySerializer, SubCategorySerializer
+from App.models.contactUsModel import ContactUsModel
 
 class TalentListingSerializer(serializers.ModelSerializer):
     image = CreateUpdateUploadMediaSerializer()
